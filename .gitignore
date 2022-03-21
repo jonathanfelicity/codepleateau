@@ -1,1 +1,3 @@
-/tests
+tests/
+__pycache__/
+codeplateau.egg-info/

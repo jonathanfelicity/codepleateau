@@ -12,12 +12,3 @@ Is a cli tool written in python that has these functionality
 ```bash
 pip install codeplateau
 ```
-
-or 
-```bash
-git clone https://github.com/jonathan-felicity/codepleateau.git
-
-cd codeplateau
-
-./setup.py
-```

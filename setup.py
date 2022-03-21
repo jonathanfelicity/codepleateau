@@ -1,4 +1,3 @@
-from importlib_metadata import entry_points
 from setuptools import setup,find_packages
 
 
@@ -9,10 +8,15 @@ setup(
     packages=find_packages(exclude=(
         "tests",
     )),
+    install_requires=[
+        'click',
+    ],
     include_package_data=True,
-    entry_points="""
+    python_requires='>=3.7',
+    py_modules=['main'],
+    entry_points= """
         [console_scripts]
-        main=main:cli
+        codeplateau=main:run
     """
 
 )
