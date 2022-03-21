@@ -1,15 +1,16 @@
-from app.shell import egg
-
-
+from email.policy import default
+from pydoc import cli
 import click
 import colorama
 
 
-@click.command()
-def run():
-    click.echo(egg())
+from scripts import shell
 
+
+@click.command()
+def start():
+    click.echo(shell.egg())
 
 
 if __name__ == '__main__':
-    run()
+    start()

@@ -1,6 +1,5 @@
 from setuptools import setup,find_packages
 
-
 setup(
     name="codeplateau",
     version="1.0.0",
@@ -16,7 +15,7 @@ setup(
     py_modules=['main'],
     entry_points= """
         [console_scripts]
-        codeplateau=main:run
+        codeplateau=main:start
     """
 
 )
