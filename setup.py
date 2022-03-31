@@ -5,14 +5,9 @@ from setuptools import setup,find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = fh.read()
-
-
-
 setup(
     name="codeplateau",
-    version="1.0.2",
+    version="1.0.6",
     author="Jonathan Felicity",
     author_email="jonathanfelicity@mail.com",
     description="CLI tool that makes coding easy and fun.",
@@ -23,7 +18,12 @@ setup(
         "tests",
     )),
     install_requires=[
-        requirements,
+        'click==8.0.4',
+        'colorama==0.4.4',
+        'requests==2.11.1',
+        'requests-toolbelt==0.9.1',
+        'six==1.16.0',
+        'tqdm==4.63.0',
     ],
     include_package_data=True,
     python_requires='>=3.7',
@@ -31,7 +31,7 @@ setup(
     
     entry_points= """
         [console_scripts]
-        codeplateau=main:start
+        codeplateau=main:cli
     """
 
 )

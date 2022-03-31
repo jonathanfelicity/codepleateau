@@ -3,7 +3,7 @@ import os
 
 
 
-def egg():
+def unlock():
     return """
 
    _____          _      _____  _       _                        ____   ___  
