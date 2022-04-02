@@ -52,3 +52,5 @@ Expected options
 * facebook
 * twitter
 * instagram
+
+> *Feel free to send your contributions.*
