@@ -3,7 +3,6 @@ ______________________________________________________________
 Is a cli tool written in python that has these functionality
 
 
-- [ ] Sharing and downloading of programming rescource.
 - [x] Link up with codeplateau online.
 - [x] Generating stater project files.
 
@@ -25,16 +24,18 @@ Getting help on how to use the tool.
 codeplateau --help
 ```
 
-#### Cracking suprise egg
+<!-- #### Cracking suprise egg
 Get different message each time you crack an egg.
 
 ```bash
 codeplateau crack
-```
+``` -->
 #### Generating stater code 
 ```bash
-codeplateau start <project name> -language=<option>
+codeplateau create <project name>
 ```
+* Type one of the following option on the prompt
+
 Expected options
 * python
 * c
@@ -43,9 +44,11 @@ Expected options
 * web
 #### Linking up with codeplateau online.
 ```bash
-codeplateau connet <argument>
+codeplateau connet
 ```
-Expected arguments
+* Type one of the following option on the prompt
+
+Expected options
 * facebook
 * twitter
 * instagram

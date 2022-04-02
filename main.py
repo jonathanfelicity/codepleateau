@@ -8,28 +8,30 @@ import colorama
 # from scripts import shell
 from scripts import pen
 from scripts import socail
-from scripts import egg
+# from scripts import egg
 
 @click.group()
 def cli():
     pass
 
-@cli.command()
-def crack():
-    """ See secret message for today """
-    click.echo(egg.unlock())
+# @cli.command()
+# def crack():
+#     """ See secret message for today """
+#     click.echo(egg.unlock())
 
 @cli.command()
-@click.argument('project')
-def create():
+@click.option('--project', '-p', required=True, help="Project name")
+def create(project):
     """ Generate boiler plate code """
-    pass
+    type = click.prompt("Pick project type", type=click.Choice(['java', 'c++', 'web', 'c', 'python']), show_default=False)
+    pen.write(project, type)
+    
 
 @cli.command()
-# @click.argument('platform')
-@click.option('--platform', type=click.Choice(['facebook', 'twitter', 'instagram'], case_sensitive=False))
-def connect(platform):
+def connect():
     """ Lookup codeplateau on social media """
+    platform = click.prompt('Select ', type=click.Choice(['facebook', 'twitter', 'instagram'], case_sensitive=False))
+
     if(platform == 'facebook'):
         socail.connect('https://web.facebook.com/hashtag/codeplateau')
     if(platform == 'twitter'):
@@ -40,7 +42,7 @@ def connect(platform):
 
     
 
-cli.add_command(crack)
+# cli.add_commancld(crack)
 cli.add_command(create)
 cli.add_command(connect)
 

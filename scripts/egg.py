@@ -1,5 +1,12 @@
-import click
-import os
+import json
+import random
+
+
+
+with open('quotes.json', 'r') as file:
+  quote = json.load(file)
+  for x in quote:
+    print(x['text'])
 
 
 
@@ -14,3 +21,5 @@ def unlock():
   \_____\___/ \__,_|\___|_|    |_|\__,_|\__\___|\__,_|\__,_|    |____(_)___/ 
                                                                         
     """
+def quote():
+  return "something...."
