@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="codeplateau",
-    version="1.0.6",
+    version="1.0.8",
     author="Jonathan Felicity",
     author_email="jonathanfelicity@mail.com",
     description="CLI tool that makes coding easy and fun.",

@@ -44,7 +44,7 @@ Expected options
 * web
 #### Linking up with codeplateau online.
 ```bash
-codeplateau connet
+codeplateau connect
 ```
 * Type one of the following option on the prompt
 
