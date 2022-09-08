@@ -1,13 +1,11 @@
-from email.policy import default
-from sqlite3 import connect
 import click
 import os
 import colorama
 
 
 # from scripts import shell
-from scripts import pen
-from scripts import socail
+from app import pen
+from app import socail
 # from scripts import egg
 
 @click.group()

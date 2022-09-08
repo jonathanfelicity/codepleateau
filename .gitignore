@@ -3,4 +3,5 @@ __pycache__/
 codeplateau.egg-info/
 ./pypirc
 dist/
-./deploy.sh
+venv/
+deploy.sh
